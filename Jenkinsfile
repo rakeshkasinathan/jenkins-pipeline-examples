@@ -20,7 +20,7 @@ pipeline {
         label 'node'
       }
       steps {
-        deleteDir()
+        //deleteDir()
         checkout scm
       }
     }
@@ -31,7 +31,7 @@ pipeline {
         label 'node'
       }
       steps {
-        deleteDir()
+        //deleteDir()
         checkout scm
         sh "echo 'Run Static Code Analysis'"
       }
@@ -55,7 +55,7 @@ pipeline {
         label 'node'
       }
       steps {
-        deleteDir()
+        //deleteDir()
         checkout scm
         sh "echo 'Run Acceptance Tests'"
       }
